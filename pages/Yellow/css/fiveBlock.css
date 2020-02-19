@@ -1,0 +1,77 @@
+:root{
+    --color-white: #fff;
+    --color-black: #000;
+    --color-grey: #414046;
+    --color-yellow: #ffec01;
+    --color-yellow2: rgba(255, 235, 0, 0.8);
+    --color-greyLight: #acacac;
+    
+    
+}
+.contactFive{
+    height: 200px;
+    width: 100%;
+    background-color: var(--color-greyLight);
+    margin-top: 20px;
+}
+.contactFive__wrapperInner{
+    width: 80%;
+     height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 132px 1fr 200px;
+}
+
+.wrepperQuotes{
+    background-color: var(--color-yellow2);
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    grid-template-columns: 1/2;
+}
+.quotesFrame{
+    background-color: var(--color-yellow);
+    height: 50%;
+    width: 100%;
+    position: relative;
+    
+}
+.quotesFrame>.fa{
+    font-size: 40px;
+   color: var(--color-grey);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+.contactFive__text{
+    grid-template-columns: 2/3;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.text__autor,
+.text__text{
+    display: block;
+}
+
+
+.foto__text{
+    background-image: url('../images/b-IMG_2128edfef1b9.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: 3/4;
+}
+
+
+
+
+
+
+
+
+

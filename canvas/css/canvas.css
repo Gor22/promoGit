@@ -1,0 +1,35 @@
+.promo{
+    margin: 40px 0 40px 0;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;    
+    
+}
+.promoInner__wrepper{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+.promo__titleBlok{
+    background-color: var(--color-yellow);
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 132px;
+    
+}
+
+.promo__title{
+    position: absolute;
+    top: 50%;
+    transform: rotate(-90deg);
+   font-family: 'Barlow Condensed', sans-serif;
+    font-size: 30px;
+    
+}
+.canvas{
+    display: grid;
+    
+}

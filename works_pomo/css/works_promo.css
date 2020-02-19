@@ -1,0 +1,140 @@
+.wrepperPromoWorks{
+    width: 100%;
+    margin: 40px 0;
+}
+.promoWorks{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap:10px;    
+    
+}
+.promoWorks__item{
+    height: 200px;
+    transition: 0.8s;
+}
+.promoWorks__item:hover .promoWorks__href{
+    background-size: 110%;
+    
+}
+
+
+.promoWorks__item:hover{
+    
+    box-shadow: 1px 2px 21px -2px rgba(1,7,10,1);
+    -webkit-box-shadow: 1px 2px 21px -2px rgba(1,7,10,1);
+    -moz-box-shadow: 1px 2px 21px -2px rgba(1,7,10,1);
+    
+}
+
+
+.promoWorks__href{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.8s;
+    background-size: 100%;
+    position: relative;
+    overflow: hidden;
+    
+}
+.promoWorks__href:hover
+.promoWorks__hrefFloatTitlt
+{
+    left: 0%;
+    
+    
+    
+}
+.promoWorks__hrefFloatTitlt{
+    position: absolute;
+    background-color: var(--color-black2);
+    padding: 10px 20px;
+    color: var(--color-white);
+    font-size: 18px;
+    width: 50%;
+    top: 0;
+    left: -120%;
+    transition: 0.8s;
+}
+.fa-chevron-right{
+    color: var(--color-white);
+    font-size: 14px;
+    position: absolute;
+    top: 41%;
+    left: 44%;
+    animation: arrowHover 1s infinite;
+    
+}
+
+@keyframes arrowHover{
+    0{
+       left: 44%; 
+    }
+    50%{
+        left: 49%;
+    }
+    100%{
+        left: 44%;
+    }
+    
+}
+
+
+
+
+
+
+
+.wrepperTitleWorks{
+    width: 100%;
+    margin: 40px 0;
+    
+}
+.TitleWorks__text{
+    width: 80%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.TitleWorks__person{
+    color: var(--color-grayLight);
+}
+
+.promoWorks__and{
+    background-color: var(--color-grayLight);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.promoWorks__andText{
+    
+    
+}
+
+
+
+.TitleWorks__text:after{
+    content: '';
+    display: block;
+    width: 80%;
+    height: 3px;
+    background-color: coral;
+    transition: 0.8s;
+    opacity: 0;
+}
+.wrepperPromoWorks:hover
+.TitleWorks__text:after{
+    opacity: 1;
+}
+
+
+
+
+
+
+

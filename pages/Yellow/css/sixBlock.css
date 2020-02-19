@@ -1,0 +1,15 @@
+:root{
+    --color-white: #fff;
+    --color-black: #000;
+    --color-grey: #414046;
+    --color-yellow: #ffec01;
+    --color-yellow2: rgba(255, 235, 0, 0.8);
+    --color-greyLight: #acacac;
+    
+    
+}
+.blockSix{
+    width: 100%;
+    height: 200px;
+    background-color: var(--color-white);
+}

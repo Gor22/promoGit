@@ -1,0 +1,532 @@
+/*Общие стили*/
+*{
+    box-sizing: border-box;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+body{
+/*    min-height: 100vh;*/
+    background-color: #E3E3E3;
+    font-family: 'Montserrat', sans-serif;
+}
+li{
+    list-style-type: none;
+}
+a{
+  text-decoration: none;  
+}
+:root{
+    --color-white: #fff;
+    --color-top: #fafafa;
+    --color-yellow: #d39d19;
+    --color-durck: #332c26;
+    --color-grey: #bfbfbf;
+    --color-orange: #cf4900;
+    
+    
+}
+
+
+
+
+/*Общие стили AND*/
+
+
+/*меню Top*/
+.menuWrapper{
+    height: 60px;
+    width: 100%;
+    background-color: var(--color-top);
+    position: fixed;
+    display: flex;
+    justify-content: space-between; 
+    flex-direction: row;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.menuWrapper>*{
+    height: 100%;
+}
+.logo{
+    width: 60px;
+    background: #666;
+    
+}
+.logo__inner{
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+    padding: 30% 10%;
+}
+
+
+
+.topGrup{
+    display: flex;
+    flex-direction: row;
+}
+.search{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid var(--color-grey);
+}
+
+
+.busket,
+.search__feeld,
+.search__button{
+    height: 100%;
+    width: 60px;
+    transition: 0.5s;
+}
+.search__feeld{
+    width: 300px;
+    border: none;
+    padding-left: 5px; 
+    transition: 0.5s;
+}
+.busket:focus,
+.search__button:focus,
+.search__feeld:focus{
+    box-shadow: inset 10px 12px 23px -6px rgba(2,16,23,0.37);
+    -webkit-box-shadow: inset 10px 12px 23px -6px rgba(2,16,23,0.37);
+    -moz-box-shadow: inset 10px 12px 23px -6px rgba(2,16,23,0.37);   
+}
+.busket:hover,
+.search__button:hover{
+    background-color: var(--color-grey);
+    
+}
+
+
+
+.search__button{
+    background-color: var(--color-white);
+    border: none;
+    color: #000;
+}
+.busket{
+    background-color: var(--color-white);
+    border: 1px solid var(--color-grey);
+}
+
+
+
+.ti-shopping-cart,
+.ti-search{
+    color: #000;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+
+button{
+    cursor: pointer;
+}
+
+
+
+/*меню Top AND*/
+
+
+
+
+
+
+/*1-й блок */
+
+.firstBlock{
+    height: 100vh;
+    width: 100%;
+/*    background: linear-gradient(to bottom, rgba(0,0,0,0) 1%,rgba(0,0,0,0) 36%,rgba(0,0,0,0.65) 100%); */
+/*   background-image: url(../images/one.jpg);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center;
+    position: relative;
+    transition: 0.8s;
+    
+}
+
+
+.firstBlock:after{
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 1%,rgba(0,0,0,0) 36%,rgba(0,0,0,0.65) 100%);
+}
+
+
+
+/*Текст*/
+.titleWelcom{
+    width: 40%;
+    position: absolute;
+    top: 65%;
+    left: 5%;
+    
+    
+}
+.titleWelcom__head{
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-size: 18px ; 
+    
+}
+.titleWelcom__subHead{
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-size: 30px ; 
+}
+
+.titleWelcom__textIntro{
+    color: var(--color-white);
+    font-size: 14px;
+    margin-top: 2%;
+    line-height: 1.7;
+    
+}
+.buttoms{
+    position: relative;
+    top: 86%;
+    left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.buttonsMore{
+    border: 2px solid var(--color-white);
+    flex-basis: 150px;  
+    cursor: pointer;
+}
+.buttonsMore__text{
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;   
+    padding: 7% 3%;
+    text-align: center;
+    color: var(--color-white);
+    font-weight: bold;
+    white-space: nowrap;
+    transition: 0.8s;
+}
+.buttonsMore__text:hover{
+    background-color: var(--color-white);
+    color:var(--color-durck);
+}
+
+/*Кнопки слайдера*/
+.sliderCollection{
+    display: flex;
+    flex-direction:  row;
+    flex-basis: auto;
+}
+.sliderCollection__item{
+    border: 2px solid var(--color-white);
+    width: 41.23px;
+    height: 40.23px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+
+/*Кнопки слайдера AND*/
+
+
+/*Текст AND*/
+
+
+
+
+
+
+
+
+
+/*1-й блок AND*/
+
+
+
+
+
+/*2-й блок */
+
+
+.secondBlock{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+   grid-template-rows:repeat(2,  1fr);
+   
+    
+    
+}
+.secondBlock>*{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.secondBlock__preIntro{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(49,50,44, 0.5);
+    top: 0;
+    left: 0;
+    padding: 25px;
+}
+
+
+/*Блоки внутри*/
+.secondBlock__preIntro{
+    opacity: 0;
+    transition: 0.8s;
+    
+}
+.secondBlock__border{
+    border: 2px solid var(--color-yellow);
+    height: 100%;
+    
+    
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px
+}
+.secondBlock__title{
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    
+}
+.secondBlock__title:after{
+    content: "";
+    display: block;
+    background-color: var(--color-yellow);
+    width: 50px;
+    height: 3px; 
+    margin: 20px auto;
+    
+}
+
+.secondBlock__text{
+    color: var(--color-white);
+    
+}
+
+
+/*Блоки внутри AND*/
+
+.secondBlock__six:hover .secondBlock__preIntro,
+.secondBlock__five:hover .secondBlock__preIntro,
+.secondBlock__four:hover .secondBlock__preIntro,
+.secondBlock__three:hover .secondBlock__preIntro,
+.secondBlock__two:hover .secondBlock__preIntro,
+.secondBlock__one:hover .secondBlock__preIntro{
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+.secondBlock__one{
+    background-image: url( ../images/everything/nastol.com.ua-271599.jpg); 
+    position: relative;
+}
+.secondBlock__two{
+    background-image: url( ../images/everything/nebo-pustyna-koraga-zasuha.jpg); 
+    position: relative;
+}
+.secondBlock__three{
+   background-image: url( ../images/everything/priroda-osen-les-doroga-3121.jpg);
+    position: relative;
+}
+
+
+.secondBlock__four{
+    background-image: url( ../images/everything/Cool-Wallpapers-For-Desktop-008.jpg);
+    position: relative;
+}
+.secondBlock__five{
+    background-image: url( ../images/everything/look.com.ua-336377.jpg); 
+    position: relative;
+}
+.secondBlock__six{
+    background-image: url( ../images/everything/THl5Z.jpg);  position: relative;
+}
+
+
+
+
+
+/*2-й блок AND*/
+
+/*3-й блок*/
+.footer{
+    
+    
+    
+}
+.footer__oneBlock{
+    height: 114px; 
+    width: 100%;
+    background-image: url( ../images/everything/Forests_USA_Parks_West_Virginia2_3008x2000.jpg);  
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position:50%;
+/*    filter: brightness(30%);*/
+    position: relative;
+    
+}
+
+.footer__oneBlock:before{
+    content: " ";
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+     background: linear-gradient(to bottom, rgba(0,0,0,0.4) 1%,rgba(0,0,0,0.5) 36%,rgba(0,0,0,0.75) 100%);
+    
+}
+
+.footer__innerWrapper{
+    position: absolute;
+}
+
+
+
+
+.footer__twoBlock{
+    height: 103px; 
+    width: 100%; 
+    display: flex;
+    align-items: center;
+}
+.footer__oneBlock{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footer__innerWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+   
+    
+}
+.footer__callToAction{
+    color: var(--color-white);
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.footer__info{
+    color: var(--color-white);
+    font-size: 12px;
+    margin-top: 5px;
+}
+.footer__button{
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    padding: 0.5% 2%;
+    line-height: 1.7;
+    cursor: pointer;
+    border: 2px solid  var(--color-orange);
+    transition: 0.8s;
+}
+.footer__button:hover{
+    background-color: rgba(0,0,0,0);
+    color: var(--color-white);
+    border: 2px solid  var(--color-orange);
+    
+}
+
+.footer__wrapperDate{
+    width: 90%;
+    margin: auto;
+    
+    
+}
+
+/*3-й блок AND*/
+
+
+
+
+.whiteButton{
+    background-color: var(--color-white);
+}
+
+
+
+
+
+
+/*Медиа запросы*/
+@media( max-width: 1390px){
+    .secondBlock{
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    grid-template-rows:repeat(3,  1fr);
+   
+    
+    
+    }
+    
+    .titleWelcom {
+        
+        top: 57%;
+        
+    }
+    
+}
+@media( max-width: 759px){
+    .secondBlock{
+        height: 300vh;
+        grid-template-columns: 1fr;
+        grid-template-rows:  repeat(auto-fit, 20%);
+
+    }
+    .titleWelcom{
+        width: 60%;
+        transform: translate(-40%, -70%);
+        top: 50%;
+        left: 50%;
+    }
+    .buttoms{
+        justify-content: center;
+        top: 65%;
+    
+    }
+    .sliderCollection{
+        display: none;
+    }
+    .search__feeld{
+        width: 150px;
+        
+    }
+}

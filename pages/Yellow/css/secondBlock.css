@@ -1,0 +1,195 @@
+/*2-й блок*/
+.secondBlock__Title{
+    font-size: 40px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.containerTitlePersone{
+    grid-column: 1/5;
+    display: flex;
+    align-items: center;
+}
+.secondBlock__TitlePersone{
+    font-weight: 400;
+    color: var(--color-greyLight);
+}
+
+
+
+.secondBlock__innerWrepper{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+/*
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.3fr 0.1fr 0.1fr   ;
+*/
+/*    height: 100%;*/
+}
+
+.supTitle{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: 50px;
+    grid-column: 1/5;
+    
+}
+.supTitle__wrapptitle{
+    background-color:  var(--color-yellow);
+    position: relative;
+}
+.supTitle__wrapptitle:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-yellow2);
+    position: absolute;
+    top: 0;
+    left: -100%;
+}
+.supTitle__title{
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 10px;
+    white-space:nowrap;
+    
+}
+.supTitle__wrappline{
+    display: flex;
+    align-items: center;
+}
+.supTitle__line{
+    height: 3px;
+    width: 100%;
+    background-color:  var(--color-greyLight);
+}
+.supTitle__wrappbuttonVievwAll{
+    display: flex;
+    align-items: center;
+    
+}
+
+.supTitle__buttonVievwAll{
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.supTitle__buttonViewAllText{
+/*
+    background-color:  var(--color-greyLight);
+    padding: 5px;
+    flex-basis: 70%;
+    display: block;
+    position: relative;
+    
+*/
+    
+    display: flex;
+flex-basis: auto;
+justify-content: center;
+align-items: center;
+background-color: var(--color-greyLight);
+height: 34px;
+    
+    
+    
+}
+.supTitle__text{
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 5px 10px;
+    
+}
+
+
+
+
+.supTitle__buttonViewAllTextFa>.fa{
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    display: block;
+}
+.supTitle__buttonViewAllTextFa{
+    height: 34px;
+    background-color:  var(--color-yellow);
+    display: block;
+    width: 34px;
+    position: relative;
+    
+}
+
+
+.secondBlock__menu{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-column: 1/3;
+}
+.secondBlock__menuItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.secondBlock__menuItem:hover{
+    background-color:  var(--color-greyLight);
+    
+}
+.secondBlock__menuItemHref{
+display: block;
+    text-transform: uppercase;
+    
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+
+.containerForto{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+/*    grid-template-rows: repeat(2, 1fr);*/
+    
+    
+    grid-template-rows: repeat(auto-fit, minmax(250px, 250px));
+    grid-column: 1/5;
+    grid-gap: 30px;
+    margin-top: 20px;
+}
+
+
+.containerForto__item{
+    background: red;
+    background-image: url('../images/apples.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+
+.containerForto__itemHref{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(96,100,105, 0.0);
+    display: block;
+    transition: 0.8s;
+    
+}
+.containerForto__item:hover .containerForto__itemHref{
+    background-color: rgba(96,100,105, 0.8);
+   
+}
+
+
+
+
+
+
+/*2-й блок AND*/

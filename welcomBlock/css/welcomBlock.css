@@ -1,0 +1,38 @@
+/*Первый блок*/
+.welcomBlock{
+    height: 100vh;
+    width: 100%;
+    background-image: url('../images/1 lmD7FIkUL4t5P-swMEPH7Q.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+.wrapperLogo{
+    background-color: var(--color-gray);
+    width: 90%;
+    height: 60px;
+    margin: 0 auto;
+}
+.header__firstWrapper{
+    background-color: var(--color-gray);
+    text-transform: uppercase;
+}
+.header__logo{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 60px;
+}
+
+.header__logoLink{
+    color: var(--color-white);
+    display: block;
+}
+
+
+
+
+
+
+
+

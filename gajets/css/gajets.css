@@ -1,0 +1,271 @@
+.displaysGagets{
+    max-width: 100%;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+/*
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    grid-gap: 40px;
+*/
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.gajetsWrapper{
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.gajets{
+    height: 200px;
+/*    margin: 0 auto;*/
+    flex-basis: 50%
+}
+.innerWrepperGajets{
+    position: relative;
+    
+}
+.gajetsLine{
+    background-color: var(--color-grayLight);
+    width: 100%;
+    height: 100px;
+    margin: auto 0;
+    position: absolute;
+    transform: rotate(-50%, -50%);
+    top: 90px;
+    
+}
+
+.nout{
+    width: 300px;
+    height: 200px;
+    background-color: var( --color-white);
+    border: 1px solid var(--color-black);
+    border-radius: 5px;
+/*    position: relative;*/
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: 0.8s;
+}
+.nout__moove_show{
+    left: 0;
+}
+
+
+
+.nout:before{
+    width: 90%;
+    height: 90%;
+    background-color: var( --color-black2);
+/*    border: 1px solid var(--color-black2);*/
+    border-radius: 5px;
+    content: "";
+    display: block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    
+}
+
+
+.tablet{
+    width: 135px;
+    height: 184px;
+    background-color: var( --color-white);
+    border: 1px solid var(--color-black);
+    border-radius: 5px;
+    position: absolute;
+    top: 22px;
+    left: -231px;
+    transition: 0.9s;
+}
+.tablet__moove_show{
+    left: 231px;
+    
+}
+
+
+
+
+.tablet:before{
+    width: 90%;
+    height: 85%;
+    background-color: var( --color-black2);
+    border-radius: 5px;
+    content: "";
+    display: block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 45%;
+    left: 50%;
+    
+}
+.tablet:after{
+    width: 10px;
+    height: 10px;
+    border: 1px solid var(--color-black);
+    border-radius: 50%;
+    content: "";
+    display: block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 93%;
+    left: 50%;
+    
+}
+
+
+
+
+.phone{
+    width: 76px;
+    height: 143px;
+    background-color: var( --color-white);
+    border: 1px solid var(--color-black);
+    border-radius: 5px;
+    position: absolute;
+    top: 66px;
+    left: -335px;
+    transition: 1.2s;
+}
+.phone_show{
+    left: 335px;
+    
+    
+}
+
+
+
+
+.phone:before{
+    width: 90%;
+    height: 85%;
+    background-color: var( --color-black2);
+    border-radius: 5px;
+    content: "";
+    display: block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 45%;
+    left: 50%;
+    
+}
+
+
+
+
+.phone:after{
+    width: 10px;
+    height: 10px;
+    border: 1px solid var(--color-black);
+    border-radius: 50%;
+    content: "";
+    display: block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 93%;
+    left: 50%;
+    
+}
+
+
+.gajets__textConteiner{
+    width: 200px;
+    height: 200px;
+    
+    flex-basis: 50%;
+    z-index:3; 
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--color-white);
+    
+}
+
+.gajets__item{
+    display: flex;
+    flex-direction: row;
+    border-right: 4px solid var(--color-orange);
+}
+
+.gajets__itemText{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+    
+    
+}
+
+.gajets__itemHead{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.gajets__itemMainText{
+    flex-basis: 90%;
+}
+
+
+
+
+.fa-arrows,
+.fa-bar-chart{
+    font-size: 20px;
+    flex-basis: 10%
+    
+        
+        
+        
+}
+.fa-mobile{
+    font-size: 30px;
+   flex-basis: 10%
+    
+}
+.gajets__itemIcon{
+    position: relative;
+    flex-basis: 20%;
+    background-color: var(--color-orange);
+    height: 140%;
+}
+
+
+.gajets__itemIcon>.fa{
+    
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+
+    
+}
+
+@media(max-width: 1000px){
+    .gajets{
+        display: none;
+        
+    }
+    .gajets__textConteiner{
+        
+        flex-basis: 600px;
+    }
+    
+}
+
+
+
+
+

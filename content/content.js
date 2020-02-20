@@ -20,7 +20,7 @@ const MY_WORKS = [
     {
         id: 02, 
         name: 'Yellow',
-        img:  'pages/yellow/promo/yellow.png',
+        img:  'pages/Yellow/promo/yellow.png',
         root: 'pages/Yellow/index.html',
         resolution: '1920x1080px',
         response: 'yes',

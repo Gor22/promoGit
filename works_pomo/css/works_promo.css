@@ -13,6 +13,7 @@
 .promoWorks__item{
     height: 200px;
     transition: 0.8s;
+    background: #000;
 }
 .promoWorks__item:hover .promoWorks__href{
     background-size: 110%;

@@ -42,7 +42,11 @@
     top: -11px;
     left: 51.6px;
 }
-
+.footer__version{
+    color: var(--color-grayLight);
+    font-size: 18px;
+    margin-top: 20px;
+}
 
 
 .footer__test>.fa{
